@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
+import { Sun, Moon, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -58,9 +58,9 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
             />
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-[#21262d] dark:bg-gray-200 text-white dark:text-gray-900 hover:bg-[#30363d] dark:hover:bg-gray-300 transition-colors"
+              className="p-2 rounded-lg text-github-text dark:text-gray-700 hover:bg-[#21262d] dark:hover:bg-gray-200 transition-colors"
             >
-              {isDark ? <FaSun /> : <FaMoon />}
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
           </div>
 
@@ -68,16 +68,15 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
           <div className="flex sm:hidden items-center gap-2">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-[#21262d] dark:bg-gray-200 text-white dark:text-gray-900 hover:bg-[#30363d] dark:hover:bg-gray-300 transition-colors"
+              className="p-2 rounded-lg text-github-text dark:text-gray-700 hover:bg-[#21262d] dark:hover:bg-gray-200 transition-colors"
             >
-              {isDark ? <FaSun /> : <FaMoon />}
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             <button
-              onClick={() => setDrawerOpen(true)}
-              className="p-2 rounded-lg text-white dark:text-gray-900 bg-[#21262d] dark:bg-gray-200 hover:bg-[#30363d] dark:hover:bg-gray-300 focus:outline-none"
-              aria-label="Open navigation menu"
+              onClick={() => setDrawerOpen(!drawerOpen)}
+              className="p-2 rounded-lg text-github-text dark:text-gray-700 hover:bg-[#21262d] dark:hover:bg-gray-200 transition-colors"
             >
-              <FaBars size={20} />
+              {drawerOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
@@ -100,7 +99,7 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
                 className="p-2 rounded-lg text-white dark:text-gray-900 bg-[#21262d] dark:bg-gray-200 hover:bg-[#30363d] dark:hover:bg-gray-300 focus:outline-none"
                 aria-label="Close navigation menu"
               >
-                <FaTimes size={20} />
+                <X size={20} />
               </button>
             </div>
             {navLinks.map(link => (

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { motion } from 'framer-motion';
-import { FaGripLines } from 'react-icons/fa';
+import { GripVertical } from 'lucide-react';
 
 export default function DraggableCard({ id, children, className = '' }) {
   const {
@@ -52,7 +52,7 @@ export default function DraggableCard({ id, children, className = '' }) {
         aria-label="Drag handle"
         style={{ zIndex: 10 }}
       >
-        <FaGripLines size={18} />
+        <GripVertical size={20} className="text-gray-400" />
       </div>
       {children}
     </motion.div>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#21262D"/>
+  <path d="M200 150C200 161.046 191.046 170 180 170C168.954 170 160 161.046 160 150C160 138.954 168.954 130 180 130C191.046 130 200 138.954 200 150Z" fill="#58A6FF"/>
+  <path d="M180 140V160M170 150H190" stroke="#161B22" stroke-width="4"/>
+  <text x="200" y="200" text-anchor="middle" fill="#8B949E" font-family="Arial" font-size="16">Project Image</text>
+</svg> 

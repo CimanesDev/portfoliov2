@@ -1,12 +1,12 @@
 import React from 'react';
-import { FaUser, FaProjectDiagram, FaGraduationCap, FaTrophy, FaEnvelope } from 'react-icons/fa';
+import { User, LayoutGrid, GraduationCap, Trophy, Mail } from 'lucide-react';
 
 const tabs = [
-  { label: 'About', key: 'about', icon: <FaUser /> },
-  { label: 'Projects', key: 'projects', icon: <FaProjectDiagram /> },
-  { label: 'Achievements', key: 'achievements', icon: <FaTrophy /> },
-  { label: 'Education', key: 'education', icon: <FaGraduationCap /> },
-  { label: 'Contact', key: 'contact', icon: <FaEnvelope /> },
+  { label: 'About', key: 'about', icon: <User size={16} /> },
+  { label: 'Projects', key: 'projects', icon: <LayoutGrid size={16} /> },
+  { label: 'Achievements', key: 'achievements', icon: <Trophy size={16} /> },
+  { label: 'Education', key: 'education', icon: <GraduationCap size={16} /> },
+  { label: 'Contact', key: 'contact', icon: <Mail size={16} /> },
 ];
 
 export default function NavbarTabs({ active, setActive }) {

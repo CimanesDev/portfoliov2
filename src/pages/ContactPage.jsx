@@ -1,18 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
-
-const contacts = [
-  {
-    icon: <FaEnvelope size={22} />, label: 'Email', value: 'jmcimanes@up.edu.ph', link: 'mailto:jmcimanes@up.edu.ph',
-  },
-  {
-    icon: <FaLinkedin size={22} />, label: 'LinkedIn', value: 'linkedin.com/in/joshcimanes', link: 'https://linkedin.com/in/joshcimanes',
-  },
-  {
-    icon: <FaGithub size={22} />, label: 'GitHub', value: 'github.com/CimanesDev', link: 'https://github.com/CimanesDev',
-  },
-];
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -21,25 +9,82 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="bg-[#161b22] dark:bg-white border border-github-border dark:border-gray-200 rounded-xl p-5 sm:p-10 w-full max-w-2xl mx-auto shadow-lg flex flex-col items-center"
+        className="bg-[#161b22] dark:bg-white border border-github-border dark:border-gray-200 rounded-xl p-5 sm:p-10 w-full max-w-2xl mx-auto shadow-lg"
       >
-        <h2 className="text-2xl font-bold text-white dark:text-gray-900 mb-6 flex items-center gap-2 justify-center">Contact</h2>
-        <div className="flex flex-col gap-4 w-full max-w-md mx-auto">
-          {contacts.map((c, i) => (
-            <motion.a
-              key={i}
-              href={c.link}
-              target={c.link.startsWith('http') ? '_blank' : undefined}
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.04, backgroundColor: '#23272e11' }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-4 px-4 py-3 rounded-lg transition-colors text-github-text dark:text-gray-900 bg-transparent hover:bg-[#23272e0a] dark:hover:bg-gray-100/60 focus:outline-none w-full"
-              style={{ WebkitTapHighlightColor: 'transparent' }}
-            >
-              <span className="flex-shrink-0 text-[#58a6ff] dark:text-blue-600">{c.icon}</span>
-              <span className="font-medium text-base break-all">{c.value}</span>
-            </motion.a>
-          ))}
+        <h2 className="text-2xl font-bold text-white dark:text-gray-900 mb-8 flex items-center gap-2 justify-center">Contact</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="bg-[#21262d] dark:bg-gray-100 p-6 rounded-lg shadow-md"
+          >
+            <h3 className="text-xl font-semibold mb-6 text-white dark:text-gray-900">Contact Information</h3>
+            <div className="space-y-6">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-[#30363d] dark:bg-gray-200">
+                  <Mail size={20} className="text-blue-500" />
+                </div>
+                <a href="mailto:jmcimanes@up.edu.ph" className="text-white dark:text-gray-900 hover:text-blue-500 dark:hover:text-blue-600 transition-colors">
+                  jmcimanes@up.edu.ph
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-[#30363d] dark:bg-gray-200">
+                  <MapPin size={20} className="text-red-500" />
+                </div>
+                <span className="text-white dark:text-gray-900">Manila, Philippines</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-[#30363d] dark:bg-gray-200">
+                  <Linkedin size={20} className="text-blue-600" />
+                </div>
+                <a
+                  href="https://linkedin.com/in/joshcimanes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white dark:text-gray-900 hover:text-blue-600 dark:hover:text-blue-700 transition-colors"
+                >
+                  LinkedIn Profile
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-[#30363d] dark:bg-gray-200">
+                  <Github size={20} className="text-gray-200 dark:text-gray-800" />
+                </div>
+                <a
+                  href="https://github.com/CimanesDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white dark:text-gray-900 hover:text-gray-300 dark:hover:text-gray-700 transition-colors"
+                >
+                  GitHub Profile
+                </a>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="bg-[#21262d] dark:bg-gray-100 p-6 rounded-lg shadow-md"
+          >
+            <h3 className="text-xl font-semibold mb-6 text-white dark:text-gray-900">Get in Touch</h3>
+            <p className="text-white dark:text-gray-900 mb-6">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div className="space-y-4">
+              <div className="p-4 rounded-lg bg-[#30363d] dark:bg-gray-200">
+                <h4 className="font-medium text-white dark:text-gray-900 mb-2">Available for</h4>
+                <ul className="list-disc list-inside text-white dark:text-gray-900 space-y-1">
+                  <li>Full-time opportunities</li>
+                  <li>Freelance projects</li>
+                  <li>Collaborations</li>
+                  <li>Open source contributions</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </motion.section>
     </div>

@@ -22,6 +22,12 @@ const initialAchievements = [
     title: 'Ateneo Blue Hacks 2025 - Champion',
     date: 'February 2025',
     description: 'Won first place out of 25 teams at the hackathon by building the entire frontend of a disaster response app that connects victims with responders.'
+  },
+  {
+    id: '4',
+    title: 'UP SoComSci Hackathon 2025 - 1st Runner-Up',
+    date: 'May 2025',
+    description: 'Won 1st runner-up out of 12 teams at a hackathon that focused on creating a solution for our healthcare system using AI.'
   }
 ];
 

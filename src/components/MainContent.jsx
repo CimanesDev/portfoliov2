@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { DndContext, closestCenter, KeyboardSensor, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
 import { SortableContext, sortableKeyboardCoordinates, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import DraggableCard from './DraggableCard';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { ExternalLink } from 'lucide-react';
 
 export default function MainContent({ setActive }) {
   const initialCards = [
@@ -20,15 +20,15 @@ export default function MainContent({ setActive }) {
       ),
       content: (
         <div className="text-sm text-github-text dark:text-gray-700">
-          <p className="mb-4">I'm a Computer Science student at the University of the Philippines Manila, passionate about building innovative solutions that make a difference.</p>
+          <p className="mb-4">I'm a second year Computer Science student at the University of the Philippines Manila, specializing in Statistical Computing. I love learning new technologies and working on projects that help others.</p>
           <div className="space-y-2">
             <h3 className="font-semibold text-github-text dark:text-gray-900">Skills:</h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Frontend Development (React, JavaScript, HTML, CSS)</li>
-              <li>Backend Development (Node.js, Express)</li>
-              <li>Database Management (MongoDB, MySQL)</li>
-              <li>UI/UX Design</li>
-              <li>Problem Solving</li>
+              <li>Backend Development (Python)</li>
+              <li>Machine Learning (Python, Scikit-learn, TensorFlow)</li>
+              <li>UI/UX Design (TailwindCSS, Figma)</li>
+              <li>Tools (Git, GitHub, Firebase, Netlify, Vercel)</li>
             </ul>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function MainContent({ setActive }) {
                 className="text-inherit hover:underline"
                 title="View Project"
               >
-                <FaExternalLinkAlt size={16} />
+                <ExternalLink size={16} />
               </motion.a>
             </div>
             <div className="flex flex-wrap gap-2 mb-1">
@@ -81,7 +81,7 @@ export default function MainContent({ setActive }) {
                 className="text-inherit hover:underline"
                 title="View Project"
               >
-                <FaExternalLinkAlt size={16} />
+                <ExternalLink size={16} />
               </motion.a>
             </div>
             <div className="flex flex-wrap gap-2 mb-1">

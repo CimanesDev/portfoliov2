@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaTerminal, FaHtml5, FaCss3, FaJs, FaReact, FaGit } from 'react-icons/fa';
+import { Code2, Database, Server, GitBranch, Terminal, FileCode, Code, TerminalSquare, FileCode2, FileJson, FileType, GitFork } from 'lucide-react';
 
 const programmingIcons = [
-  { icon: <FaCode size={24} className="text-[#f89820]" />, label: 'Java' },
-  { icon: <FaTerminal size={24} className="text-[#3776ab]" />, label: 'Python' },
-  { icon: <FaTerminal size={24} className="text-[#00599c]" />, label: 'C++' },
-  { icon: <FaHtml5 size={24} className="text-[#e34c26]" />, label: 'HTML' },
-  { icon: <FaCss3 size={24} className="text-[#1572b6]" />, label: 'CSS' },
-  { icon: <FaJs size={24} className="text-[#f7df1e]" />, label: 'JavaScript' },
-  { icon: <FaReact size={24} className="text-[#61dafb]" />, label: 'React' },
-  { icon: <FaGit size={24} className="text-[#f34f29]" />, label: 'Git/TailwindCSS' },
+  { icon: <Code size={24} className="text-[#f89820]" />, label: 'Java' },
+  { icon: <TerminalSquare size={24} className="text-[#3776ab]" />, label: 'Python' },
+  { icon: <TerminalSquare size={24} className="text-[#00599c]" />, label: 'C++' },
+  { icon: <FileType size={24} className="text-[#e34c26]" />, label: 'HTML' },
+  { icon: <FileCode2 size={24} className="text-[#1572b6]" />, label: 'CSS' },
+  { icon: <FileJson size={24} className="text-[#f7df1e]" />, label: 'JavaScript' },
+  { icon: <Code2 size={24} className="text-[#61dafb]" />, label: 'React' },
+  { icon: <GitFork size={24} className="text-[#f34f29]" />, label: 'Git/TailwindCSS' },
 ];
 
 export default function AboutPage() {
