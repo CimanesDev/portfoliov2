@@ -28,7 +28,7 @@ export default function MainContent({ setActive }) {
               <li>Backend Development (Python)</li>
               <li>Machine Learning (Python, Scikit-learn, TensorFlow)</li>
               <li>UI/UX Design (TailwindCSS, Figma)</li>
-              <li>Tools (Git, GitHub, Firebase, Netlify, Vercel)</li>
+              <li>Tools (Git, GitHub, Firebase, Netlify, Cursor)</li>
             </ul>
           </div>
         </div>

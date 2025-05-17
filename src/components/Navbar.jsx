@@ -58,7 +58,8 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
             />
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg text-github-text dark:text-gray-700 hover:bg-[#21262d] dark:hover:bg-gray-200 transition-colors"
+              className="p-2 rounded-full bg-[#21262d] dark:bg-gray-200 text-white dark:text-gray-900 hover:bg-[#30363d] dark:hover:bg-gray-300 transition-colors"
+              title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -68,13 +69,14 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
           <div className="flex sm:hidden items-center gap-2">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg text-github-text dark:text-gray-700 hover:bg-[#21262d] dark:hover:bg-gray-200 transition-colors"
+              className="p-2 rounded-full bg-[#21262d] dark:bg-gray-200 text-white dark:text-gray-900 hover:bg-[#30363d] dark:hover:bg-gray-300 transition-colors"
+              title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             <button
               onClick={() => setDrawerOpen(!drawerOpen)}
-              className="p-2 rounded-lg text-github-text dark:text-gray-700 hover:bg-[#21262d] dark:hover:bg-gray-200 transition-colors"
+              className="p-2 rounded-full bg-[#21262d] dark:bg-gray-200 text-white dark:text-gray-900 hover:bg-[#30363d] dark:hover:bg-gray-300 transition-colors"
             >
               {drawerOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -96,7 +98,7 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
               <span className="text-lg font-bold text-white dark:text-gray-900">Menu</span>
               <button
                 onClick={() => setDrawerOpen(false)}
-                className="p-2 rounded-lg text-white dark:text-gray-900 bg-[#21262d] dark:bg-gray-200 hover:bg-[#30363d] dark:hover:bg-gray-300 focus:outline-none"
+                className="p-2 rounded-full bg-[#21262d] dark:bg-gray-200 text-white dark:text-gray-900 hover:bg-[#30363d] dark:hover:bg-gray-300 transition-colors"
                 aria-label="Close navigation menu"
               >
                 <X size={20} />
@@ -106,7 +108,7 @@ export default function Navbar({ setActive, isDark, toggleTheme }) {
               <button
                 key={link.key}
                 onClick={() => handleNavClick(link.key)}
-                className="w-full text-left px-3 py-2 text-base font-medium text-white dark:text-gray-900 hover:bg-[#21262d] dark:hover:bg-gray-200 rounded transition-colors"
+                className="w-full text-left px-3 py-2 text-base font-medium text-white dark:text-gray-900 bg-[#21262d] dark:bg-gray-100 hover:bg-[#30363d] dark:hover:bg-gray-200 rounded-lg transition-colors"
               >
                 {link.label}
               </button>

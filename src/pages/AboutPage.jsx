@@ -1,16 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Server, GitBranch, Terminal, FileCode, Code, TerminalSquare, FileCode2, FileJson, FileType, GitFork } from 'lucide-react';
+import { 
+  Code2,
+  Terminal,
+  Cpu,
+  FileText,
+  FileCode2,
+  FileJson,
+  Code,
+  GitFork
+} from 'lucide-react';
 
 const programmingIcons = [
-  { icon: <Code size={24} className="text-[#f89820]" />, label: 'Java' },
-  { icon: <TerminalSquare size={24} className="text-[#3776ab]" />, label: 'Python' },
-  { icon: <TerminalSquare size={24} className="text-[#00599c]" />, label: 'C++' },
-  { icon: <FileType size={24} className="text-[#e34c26]" />, label: 'HTML' },
+  { icon: <Code2 size={24} className="text-[#f89820]" />, label: 'Java' },
+  { icon: <Terminal size={24} className="text-[#3776ab]" />, label: 'Python' },
+  { icon: <Cpu size={24} className="text-[#00599c]" />, label: 'C++' },
+  { icon: <FileText size={24} className="text-[#e34c26]" />, label: 'HTML' },
   { icon: <FileCode2 size={24} className="text-[#1572b6]" />, label: 'CSS' },
   { icon: <FileJson size={24} className="text-[#f7df1e]" />, label: 'JavaScript' },
-  { icon: <Code2 size={24} className="text-[#61dafb]" />, label: 'React' },
-  { icon: <GitFork size={24} className="text-[#f34f29]" />, label: 'Git/TailwindCSS' },
+  { icon: <Code size={24} className="text-[#61dafb]" />, label: 'React' },
+  { icon: <GitFork size={24} className="text-[#f34f29]" />, label: 'TailwindCSS' },
 ];
 
 export default function AboutPage() {
@@ -45,7 +54,7 @@ export default function AboutPage() {
           <div className="font-semibold text-white dark:text-gray-900 mb-2 text-base sm:text-lg">Skills & Interests</div>
           <ul className="list-disc pl-5 text-xs sm:text-sm text-github-text dark:text-gray-700 space-y-1">
             <li><b>Tools & Platforms:</b> Git, GitHub, GitLab, VS Code, Unity</li>
-            <li><b>Languages:</b> Native Filipino, Fluent English, Conversational Mandarin and Hokkien (HSK 4/HSKK)</li>
+            <li><b>Languages:</b> Native Filipino, Fluent English, Conversational Mandarin (HSK 4/HSKK)</li>
             <li><b>Interests:</b> Hackathons, AI/ML, UI/UX, Student Leadership, Tech for Good</li>
           </ul>
         </div>

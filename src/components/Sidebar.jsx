@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Github, Languages } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, Languages, Download, Coffee } from 'lucide-react';
 import profilePic from '../assets/pic.png';
 
 export default function Sidebar() {
@@ -24,6 +24,15 @@ export default function Sidebar() {
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><MapPin size={18} /> Manila, Philippines</div>
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><Linkedin size={18} /> <a href="https://linkedin.com/in/joshcimanes" className="hover:underline focus:underline transition-colors" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><Github size={18} /> <a href="https://github.com/CimanesDev" className="hover:underline focus:underline transition-colors" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+        <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700">
+          <Coffee size={18} />
+          <a href="https://buymeacoffee.com/cimanesdev" target="_blank" rel="noopener noreferrer" className="hover:underline focus:underline transition-colors">Buy me a coffee</a>
+        </div>
+        <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700">
+          <Download size={18} />
+          <a href="/public/resume/Josh Bradley Cimanes CV.pdf" download className="hover:underline focus:underline transition-colors">Download CV</a>
+        </div>
+        
       </div>
       <div className="hidden md:block w-full mb-2">
         <div className="flex items-center gap-2 mb-2 text-github-text dark:text-gray-700 font-semibold text-base">
@@ -32,7 +41,7 @@ export default function Sidebar() {
         <div className="flex flex-wrap gap-2">
           <span className="bg-[#21262d] dark:bg-gray-200 text-xs text-white dark:text-gray-800 px-3 py-1 rounded-full">Native Filipino</span>
           <span className="bg-[#21262d] dark:bg-gray-200 text-xs text-white dark:text-gray-800 px-3 py-1 rounded-full">Fluent English</span>
-          <span className="bg-[#21262d] dark:bg-gray-200 text-xs text-white dark:text-gray-800 px-3 py-1 rounded-full">Conversational Mandarin and Hokkien (HSK 4/HSKK)</span>
+          <span className="bg-[#21262d] dark:bg-gray-200 text-xs text-white dark:text-gray-800 px-3 py-1 rounded-full">Conversational Mandarin (HSK 4/HSKK)</span>
         </div>
       </div>
     </motion.aside>
