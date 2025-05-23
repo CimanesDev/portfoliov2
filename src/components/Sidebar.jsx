@@ -30,7 +30,7 @@ export default function Sidebar() {
         </div>
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700">
           <Download size={18} />
-          <a href="/public/resume/Josh Bradley Cimanes CV.pdf" download className="hover:underline focus:underline transition-colors">Download CV</a>
+          <a href="/resume/Josh Bradley Cimanes CV.pdf" download className="hover:underline focus:underline transition-colors">Download CV</a>
         </div>
         
       </div>
