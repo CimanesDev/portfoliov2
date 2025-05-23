@@ -22,7 +22,7 @@ export default function Sidebar() {
       <div className="hidden md:flex flex-col gap-2 w-full mb-6">
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><Mail size={18} /> jmcimanes@up.edu.ph</div>
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><MapPin size={18} /> Manila, Philippines</div>
-        <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><Linkedin size={18} /> <a href="https://linkedin.com/in/joshcimanes" className="hover:underline focus:underline transition-colors" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+        <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><Linkedin size={18} /> <a href="https://linkedin.com/in/cimanesdev" className="hover:underline focus:underline transition-colors" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700"><Github size={18} /> <a href="https://github.com/CimanesDev" className="hover:underline focus:underline transition-colors" target="_blank" rel="noopener noreferrer">GitHub</a></div>
         <div className="flex items-center gap-2 text-base text-github-text dark:text-gray-700">
           <Coffee size={18} />
