@@ -24,10 +24,8 @@ export default function MainContent({ setActive }) {
           <div className="space-y-2">
             <h3 className="font-semibold text-github-text dark:text-gray-900">Skills:</h3>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Frontend Development (React, JavaScript, HTML, CSS)</li>
-              <li>Backend Development (Python)</li>
-              <li>Machine Learning (Python, Scikit-learn, TensorFlow)</li>
-              <li>UI/UX Design (TailwindCSS, Figma)</li>
+              <li>Frontend Development (React, JavaScript, TypeScript, TailwindCSS)</li>
+              <li>Backend Development (Python, Firebase, Supabase, PostgreSQL)</li>
               <li>Tools (Git, GitHub, Firebase, Netlify, Cursor)</li>
             </ul>
           </div>

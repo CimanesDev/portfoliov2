@@ -28,6 +28,12 @@ const initialAchievements = [
     title: 'UP SoComSci Hackathon 2025 - 1st Runner-Up',
     date: 'May 2025',
     description: 'Won 1st runner-up out of 12 teams at a hackathon that focused on creating a solution for our healthcare system using AI.'
+  },
+  {
+    id: '5',
+    title: 'GDG UP Manila GenAIus Hackathon 2025 - 4th Place',
+    date: 'May 2025',
+    description: 'Won 4th place at a hackathon with the theme "AI for the Underserved: Tech Justice in Action".'
   }
 ];
 

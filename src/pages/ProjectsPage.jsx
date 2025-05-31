@@ -9,7 +9,7 @@ const initialProjects = [
   {
     id: '1',
     title: 'KaagapAI',
-    stack: ['ReactJS', 'TailwindCSS', 'Gemini API'],
+    stack: ['ReactJS', 'TailwindCSS', 'Gemini API', 'Firebase'],
     description: 'Developed a website that helps people log in their symptoms and lets AI analyze, get a diagnosis, and recommend nearby clinics/hospitals.',
     link: 'https://kaagap-ai.netlify.app',
     image: '/projects/kaagapai.png'
@@ -28,12 +28,11 @@ const initialProjects = [
     stack: ['Java'],
     description: 'Developed a Restaurant POS system as a school requirement for our final machine problem. It manages transactions, item encoding, customizations, and sales tracking to streamline coffee shop operations.',
     link: null,
-    image: '/projects/placeholder.svg'
   },
   {
     id: '4',
     title: 'SalbaBida',
-    stack: ['ReactJS', 'Google Maps API'],
+    stack: ['ReactJS', 'Google Maps API', 'Python Flask'],
     description: 'Built the entire frontend of a real-time disaster response platform connecting victims (Biktima) with responders (Tutulong), delivering an intuitive and responsive user experience that streamlined emergency coordination.',
     link: null,
     image: '/projects/salbabida.png'
@@ -46,14 +45,29 @@ const initialProjects = [
     link: 'https://quinemccluskey-carocimanes.netlify.app',
     image: '/projects/quine.png'
   },
-  {
-    id: '6',
-    title: 'EDC atbp',
-    stack: ['ReactJS', 'TailwindCSS'],
-    description: 'Developed a complete e-commerce solution with role-based dashboards for administrators and customers, featuring product management, secure transactions, and real-time inventory tracking to replicate a seamless online shopping experience.',
-    link: 'https://edc-atbp.netlify.app',
-    image: '/projects/edc.png'
-  },
+    {
+      id: '6',
+      title: 'EDC atbp',
+      stack: ['ReactJS', 'TailwindCSS'],
+      description: 'Developed a complete e-commerce solution with role-based dashboards for administrators and customers, featuring product management, secure transactions, and real-time inventory tracking to replicate a seamless online shopping experience.',
+      link: 'https://edc-atbp.netlify.app',
+      image: '/projects/edc.png'
+    },
+    {
+      id: '7',
+      title: 'BantAI',
+      stack: ['ReactJS', 'TailwindCSS', 'Gemini API', 'Google Maps API', 'Firebase'],
+      description: 'Built a website that enables users to analyze their traffic tickets for potential errors using AI, submit appeals directly to administrators, and look up violations by license plate number. ',
+      link: 'https://bantai.netlify.app',
+      image: '/projects/bantai.png'
+    },
+    {
+      id: '8',
+      title: 'Tetris Effect',
+      stack: ['JavaFX'],
+      description: 'Developed a Tetris clone with dynamic music, background effects, and multithreading for smoother gameplay. It has a highscore system and a leaderboard, as well as a local multiplayer game mode.',
+      link: null,
+    }
 ];
 
 export default function ProjectsPage() {
