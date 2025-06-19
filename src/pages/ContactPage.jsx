@@ -40,7 +40,7 @@ export default function ContactPage() {
                   <Linkedin size={20} className="text-blue-600" />
                 </div>
                 <a
-                  href="https://linkedin.com/in/joshcimanes"
+                  href="https://linkedin.com/in/cimanesdev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white dark:text-gray-900 hover:text-blue-600 dark:hover:text-blue-700 transition-colors"

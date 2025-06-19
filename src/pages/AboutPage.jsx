@@ -1,25 +1,103 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Code2,
-  Terminal,
-  Cpu,
-  FileText,
-  FileCode2,
-  FileJson,
-  Code,
-  GitFork
-} from 'lucide-react';
 
 const programmingIcons = [
-  { icon: <Code2 size={24} className="text-[#f89820]" />, label: 'Java' },
-  { icon: <Terminal size={24} className="text-[#3776ab]" />, label: 'Python' },
-  { icon: <Cpu size={24} className="text-[#00599c]" />, label: 'C++' },
-  { icon: <FileText size={24} className="text-[#e34c26]" />, label: 'HTML' },
-  { icon: <FileCode2 size={24} className="text-[#1572b6]" />, label: 'CSS' },
-  { icon: <FileJson size={24} className="text-[#f7df1e]" />, label: 'JavaScript' },
-  { icon: <Code size={24} className="text-[#61dafb]" />, label: 'React' },
-  { icon: <GitFork size={24} className="text-[#f34f29]" />, label: 'TailwindCSS' },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+        alt="Java"
+        aria-label="Java"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'Java',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+        alt="Python"
+        aria-label="Python"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'Python',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        alt="HTML"
+        aria-label="HTML"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'HTML',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        alt="CSS"
+        aria-label="CSS"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'CSS',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        alt="JavaScript"
+        aria-label="JavaScript"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'JavaScript',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        alt="TypeScript"
+        aria-label="TypeScript"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'TypeScript',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        alt="React"
+        aria-label="React"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'React',
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+        alt="TailwindCSS"
+        aria-label="TailwindCSS"
+        tabIndex={0}
+        className="w-8 h-8 sm:w-12 sm:h-12 object-contain p-1"
+      />
+    ),
+    label: 'TailwindCSS',
+  },
 ];
 
 export default function AboutPage() {
@@ -36,7 +114,7 @@ export default function AboutPage() {
           Hi! I'm <b>Josh Bradley Cimanes</b>, a Computer Science student at the University of the Philippines Manila (2023–2027), passionate about full-stack development, AI/ML, and building impactful tech solutions. I love collaborating in hackathons and student orgs, and have led and won several tech competitions. I enjoy learning new technologies and working on projects that help others.
         </p>
         <div className="mb-6">
-          <div className="font-semibold text-white dark:text-gray-900 mb-2 text-base sm:text-lg">Programming Languages & Web</div>
+          <div className="font-semibold text-white dark:text-gray-900 mb-2 text-base sm:text-lg">Programming Languages</div>
           <div className="grid grid-cols-4 sm:flex sm:flex-wrap gap-3 sm:gap-4 mb-4 justify-center">
             {programmingIcons.map((item, i) => (
               <motion.div
