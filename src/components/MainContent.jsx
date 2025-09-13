@@ -20,7 +20,7 @@ export default function MainContent({ setActive }) {
       ),
       content: (
         <div className="text-sm text-github-text dark:text-gray-700">
-          <p className="mb-4">I'm a second year Computer Science student at the University of the Philippines Manila, specializing in Statistical Computing. I love learning new technologies and working on projects that help others.</p>
+          <p className="mb-4">I'm a third year Computer Science student at the University of the Philippines Manila, specializing in Statistical Computing. I love learning new technologies and working on projects that help others.</p>
           <div className="space-y-2">
             <h3 className="font-semibold text-github-text dark:text-gray-900">Skills:</h3>
             <ul className="list-disc pl-5 space-y-1">
