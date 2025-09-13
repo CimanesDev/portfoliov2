@@ -10,9 +10,9 @@ const initialEducation = [
     school: 'University of the Philippines Manila',
     degree: 'BS Computer Science (2023–2027)',
     details: [
-      "College Scholar/Dean's List (1st Sem AY 2023-2024, 1st Sem AY 2024-2025)",
-      'Google Developer Groups on Campus UP Manila – Member',
-      'UP Society of Computer Scientists – Member',
+      "College Scholar/Dean's List | AY 2023-2025 (3 semesters)",
+      'Google Developer Groups on Campus UP Manila – CTO',
+      'UP Society of Computer Scientists – VP for Projects',
       'Level Up – Project Head',
     ],
   },

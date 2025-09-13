@@ -34,6 +34,12 @@ const initialAchievements = [
     title: 'GDG UP Manila GenAIus Hackathon 2025 - 4th Place',
     date: 'May 2025',
     description: 'Won 4th place at a hackathon with the theme "AI for the Underserved: Tech Justice in Action".'
+  },
+  {
+    id: '6',
+    title: 'DLSU Hackercup 2025 - 4th Place',
+    date: 'August 2025',
+    description: 'Won 4th place at a hackathon with the theme "SDG 11 and Convenience".'
   }
 ];
 

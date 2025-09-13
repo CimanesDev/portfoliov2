@@ -111,7 +111,7 @@ export default function AboutPage() {
       >
         <h2 className="text-xl sm:text-2xl font-bold text-white dark:text-gray-900 mb-4 sm:mb-6 flex items-center gap-2">About Me</h2>
         <p className="text-github-text dark:text-gray-700 mb-4 sm:mb-6 text-base sm:text-lg">
-          Hi! I'm <b>Josh Bradley Cimanes</b>, a Computer Science student at the University of the Philippines Manila (2023–2027), passionate about full-stack development, AI/ML, and building impactful tech solutions. I love collaborating in hackathons and student orgs, and have led and won several tech competitions. I enjoy learning new technologies and working on projects that help others.
+          Hi! I'm <b>Josh Bradley Cimanes</b>, a third year Computer Science student at the University of the Philippines Manila (2023–2027), passionate about full-stack development, AI/ML, and building impactful tech solutions. I love collaborating in hackathons and student orgs, and have led and won several tech competitions. I enjoy learning new technologies and working on projects that help others.
         </p>
         <div className="mb-6">
           <div className="font-semibold text-white dark:text-gray-900 mb-2 text-base sm:text-lg">Programming Languages</div>
